@@ -7,7 +7,7 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
-class Coment(models.Model):
+class Comment(models.Model):
     post = models.ForeignKey(Post, on_delete=models.CASCADE)
     content = models.TextField("댓글 내용")
 
